@@ -69,8 +69,7 @@ Death:
 LDA $188A       ; Prevents death from running every frame
 BNE Return
 JSL $F606       ; Die Mario, die!
-LDA #$01	
-STA $188A       ; Sets flag in free RAM to prevent death from running every frame (cleared on overworld)
+INC $188A       ; Sets flag in free RAM to prevent death from running every frame (cleared on overworld)
 BRA Return
 
 
