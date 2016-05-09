@@ -3,8 +3,8 @@
 ;	If the player has less than the customizable amount of coins, Guardian displays selected message
 ;	and flings the player away with a sound. If the player has enough, Guardian takes that many coins
 ;	away, plays "correct" sound, displays selected message, and allows access to blocked passageway.
-;	Must be where Mario can't touch its top, bottom, or right side with less than 30 coins.
 ;
+;	Must be where Mario can't touch its top, bottom, or right side with less than 30 coins.
 ;	Credit preferred
 ;
 ;	;	;	;	;	;	;	;	;	;	;	;
