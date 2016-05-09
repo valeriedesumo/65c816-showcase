@@ -26,9 +26,9 @@ LDA #$28    ; Punt SFX
 LDY #$01    ; Change to 01 for 1st level message, 02 for 2nd message, 03 for Yoshi's message
 BRA Return
 Rich:
-SEC         ; \
-SBC !coin   ;  Take away coins
-STA $0DBF   ; /
+SEC         ;\
+SBC !coin   ; Take away coins
+STA $0DBF   ;/
 INC $191F   ; Disable Guardian via free RAM (cleared on overworld load)
 LDA #$29    ; Wrong SFX
 LDY #$02    ; Change to 01 for 1st level message, 02 for 2nd message, 03 for Yoshi's message
