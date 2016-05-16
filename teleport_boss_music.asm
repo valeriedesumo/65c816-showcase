@@ -12,23 +12,23 @@
 dcb "INIT"
 dcb "MAIN"
 
-LDA $0699
+LDA $1B98
 CMP #$09   ; Warp after 9 seconds, the length of the Passed Boss music
 BEQ Warp
 
-LDA $0698  ; Prevents music reset
+LDA $1B97  ; Prevents music reset
 BNE Continue
 
 LDA #$0B   ; Music
 STA $1DFB  ; Play
 LDA #$01   ; Set flag to
-STA $0698  ; prevent music reset
+STA $1B97  ; prevent music reset
 
 Continue:
 LDA $13	   ; Frame count
 AND #$3F
 BNE Return ; Continue only once per second
-INC $0699  ; Counts seconds
+INC $1B98  ; Counts seconds
 RTL
 
 Warp:
@@ -36,8 +36,6 @@ LDA #$06  ;\
 STA $71   ; Enter pipe
 STZ $89   ;/
 STZ $88   ; Instantly warp
-STZ $0698 ; Clear flags
-STZ $0699
 
 Return:
 RTL
