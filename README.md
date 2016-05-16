@@ -11,3 +11,6 @@ The files here are things I've created from 2009 to 2012 for either for my own S
 These are all written for the [xkas assembler](http://www.smwiki.net/wiki/Xkas).
 
 Feel free to contact me if you wish to see these in-game, or to see my completed SMW levels.
+
+## Demonstration
+[In this video](https://youtu.be/_U66QgN4jDk), I demonstrate the [Guardian block](guardian.asm), the [On/Off Coin Drain effect](on_off_coin_drain.asm), the [On/Off P-Switches](on_off_p-switch.asm), and some [levelASM code](levelcode.asm) (which toggles the spotlight sprite).
